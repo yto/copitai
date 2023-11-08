@@ -1,0 +1,15 @@
+{
+    "name": "copitai - Copy the yahoo reailtime search results",
+    "description": "Copy the yahoo realtime search results in TSV, plain text, JSON formats",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": {
+        "16": "icon-16.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://search.yahoo.co.jp/realtime/*"],
+            "js": ["content-script.js"]
+        }
+    ]
+}
